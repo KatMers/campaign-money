@@ -18,7 +18,7 @@ function loadData() {
 	$.getJSON("js/donations_over_5K.json", function(moneyData) {
 		writeTable(moneyData);
 
-	})
+	});
 
 	// 2.
 	// Write an AJAX call here to load your data.
@@ -28,7 +28,7 @@ function loadData() {
 
 function writeTable(data) {
 
-	for (i=0; i < data.length; i++);
+	for (i=0; i < data.length; i++) {
 		var date = data[i]["Contribution Date"];
 		var info = data[i]["Contribution Information"];
 		var amount = data[i]["Amount"];
@@ -43,6 +43,7 @@ function writeTable(data) {
 						"<td class='amount'>"+amount+"</td>"+
 				"</tr>")
 		}
+	}
 	// 3.
 	// Make a list of every donation made to "CITIZENS TO ELECT KURT SCHAEFER ATTORNEY GENERAL"
 	// Do this by looping through the data and writing a new table row (<tr></tr>) for every donation.

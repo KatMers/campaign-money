@@ -5,9 +5,17 @@ Hint: You'll want to assign a class to the associated <th> and <td> tags
 in your index.html and script.js files. */
 
 .chart {
-  height: 500px;
+  height: 600px;
+ 
+}
+
+td {
+	height: 50px;
+	vertical-align: bottom;
+	border-collapse: collapse;
 }
 
 .amount {
 	text-align: right;
 	}
+
