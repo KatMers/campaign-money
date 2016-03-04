@@ -16,6 +16,7 @@ $(document).ready(function() {
 function loadData() {
 
 	$.getJSON("js/donations_over_5K.json", function(moneyData) {
+		// console.log(moneyData)
 		writeTable(moneyData);
 
 	});
@@ -27,6 +28,7 @@ function loadData() {
 
 
 function writeTable(data) {
+	// console.log(data)
 
 	for (i=0; i < data.length; i++) {
 		var date = data[i]["Contribution Date"];
